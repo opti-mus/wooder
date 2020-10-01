@@ -1,0 +1,404 @@
+$brownColor: #C0AF91
+$whiteColor: #ffffff
+$blackColor: #010101
+
+html,
+body 
+    margin: 0
+    padding: 0
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong 
+    font-family: 'Maven Pro', sans-serif
+    margin: 0
+
+
+p,
+li,
+span,
+label,
+input,
+textarea,
+div 
+    font-family: 'Maven Pro', sans-serif;
+
+
+a 
+    text-decoration: none
+    
+
+ul,
+li 
+    list-style: none
+    margin: 0
+    padding: 0
+
+
+.container 
+    max-width: 1200px
+    margin: 0 auto
+.header
+    background: url(/img/main-bg.png) no-repeat center/cover
+    height: 100vh
+.header-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 10px
+    padding-left: 10px
+    padding-right: 10px
+    color: $whiteColor
+    &__menu
+        display: flex
+        align-items: center
+        i
+            font-size: 30px
+        span 
+            margin-left: 8px
+    &__nav
+        
+                
+        ul
+            display: flex
+            align-items: center
+            li
+                margin-left: 80px
+                &:first-child
+                    margin-left: 0
+                a
+                    color: $whiteColor
+    &__lang
+        select
+            background: none
+            border: none
+            text-transform: uppercase
+            color: $whiteColor
+            
+.header-main
+    color: $brownColor
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 80vh
+    &__left
+        display: flex
+        align-items: center
+        transform: rotate(90deg)
+        white-space: nowrap
+        div
+            position: relative
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 20px
+                height: 1px
+                background: $whiteColor
+                left: -30px
+                bottom: 9px
+        i
+            font-size: 8px
+            margin-left: 25px
+            color: #303030
+            &:nth-child(2)
+                color: #ffffff
+    &__center
+        h1 
+            font-size: 100px
+            font-weight: 400
+            margin-bottom: 37px
+            
+    &__right
+        opacity: .2
+        white-space: nowrap
+        transform: rotate(90deg) translateY(50%)
+.works
+    padding-top: 70px
+    &-wrapper
+        
+        .decor
+            display: flex
+            align-items: center
+            justify-content: space-around
+            position: relative
+            overflow: hidden
+            margin-top: 200px
+            margin-bottom: 100px
+            &::before
+                content: '02.'
+                position: absolute
+                bottom: 0
+                right: 0
+                font-size: 36px
+            &::after
+                content: 'Decor'
+                text-transform: uppercase
+                font-size: 170px
+                position: absolute
+                left: 0
+                opacity: .1
+            &__text
+                margin-right: 100px
+                text-align: end
+                h3 
+                    font-size: 48px
+                    text-transform: uppercase
+                    font-weight: 400
+                    position: relative
+                    &::before
+                        content: ''
+                        width: 100px
+                        height: 1px
+                        display: block
+                        background: $blackColor
+                        position: absolute
+                        right: -120px
+                        bottom: 26px
+                p
+                    font-size: 15px
+                    position: relative
+                    &::before
+                        content: ''
+                        width: 30px
+                        height: 2px
+                        display: block
+                        background: $brownColor
+                        position: absolute
+                        right: -50px
+                        top: 5px
+                a
+                    color: $blackColor
+                    position: relative
+                    &::before
+                        content: ''
+                        display: block
+                        width: 44px
+                        height: 2px
+                        background: $brownColor
+                        position: absolute
+                        bottom: -5px
+                        left: 0
+                        
+                    i 
+                        color: $brownColor
+            
+            img
+                min-width: 200px
+                width: 50%
+                height: auto
+.title
+    font-size: 36px
+    font-weight: 500
+    letter-spacing: 2px
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        display: block
+        width: 45px
+        height: 3px
+        background: $brownColor
+        bottom: 17px
+        left: 33px
+.furniture
+    display: flex
+    align-items: center
+    justify-content: space-around
+    position: relative
+    overflow: hidden
+    &::before
+        content: '01.'
+        position: absolute
+        bottom: 0
+        left: 0
+        font-size: 36px
+    &::after
+        content: 'Furniture'
+        text-transform: uppercase
+        font-size: 170px
+        position: absolute
+        right: -200px
+        opacity: .1
+    
+    img
+        min-width: 200px
+        width: 50%
+        height: auto
+.btn  
+    border: 1px solid $whiteColor
+    color: $whiteColor
+    text-transform: uppercase
+    letter-spacing: 2px
+    padding: 20px 60px
+.left-bars
+    margin-left: 100px
+    h3
+        font-size: 48px
+        text-transform: uppercase
+        font-weight: 400
+        &::before
+            content: ''
+            width: 100px
+            height: 1px
+            display: block
+            background: $blackColor
+            margin-left: -120px
+            margin-bottom: -30px
+    p
+        font-size: 15px
+        &::before
+            content: ''
+            width: 30px
+            height: 2px
+            display: block
+            background: $brownColor
+            margin-left: -50px
+            margin-bottom: -8px
+    a
+        color: $blackColor
+        position: relative
+        &::before
+            content: ''
+            display: block
+            width: 44px
+            height: 2px
+            background: $brownColor
+            position: absolute
+            bottom: -5px
+                        
+    i 
+        color: $brownColor
+.wooder-video
+    text-align: center
+    h1 
+        font-size: 48px
+        font-weight: 400
+        margin-bottom: 40px
+        position: relative
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            width: 44px
+            height: 4px
+            bottom: -15px
+            left: 50%
+            transform: translateX(-50%)
+            background: $brownColor
+    p 
+        font-size: 15px
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-top: 80px
+        div
+            position: relative
+            z-index: 1
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                width: 70px
+                height: 70px
+                border-radius: 50%
+                background: #BEA67C
+                left: 50%
+                bottom: 63%
+                transform: translate(-50% ,50%)
+                z-index: 2
+                opacity: .8
+            &::before
+                content: ""
+                display: inline-block
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 10px 0 10px 20px
+                border-color: transparent transparent transparent $whiteColor
+                position: absolute
+                left: 51%
+                bottom: 63%
+                transform: translate(-50% ,50%)
+                z-index: 3
+            p 
+                margin-top: 50px
+                position: relative
+                &::after
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 44px
+                    height: 2px
+                    background: $brownColor
+                    top: -30px
+                    left: 50%
+                    transform: translateX(-50%)
+
+.black-woods
+    background: url(/img/black-woods.jpg) no-repeat center/cover
+    height: 700px
+    margin-top: 100px
+    margin-bottom: 100px
+    padding: 90px 0
+    &__main
+        width: 50%
+        color: $brownColor
+        &.left-bars
+            h3
+                white-space: nowrap
+                &::before
+                    background: $whiteColor
+            p 
+                margin-bottom: 80px
+            a 
+                color: $whiteColor
+                position: static 
+                &::before
+                    display: none
+           
+    .container
+        border: 1px solid #BEA67C
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        &::after 
+            content: ''
+            display: block
+            position: absolute
+            width: 150px
+            height: 2px
+            background: $brownColor
+            right: 0
+            transform: rotate(90deg)
+.about
+    margin-bottom: 100px
+    .container
+        .furniture
+            &::before
+                display: none
+            &::after 
+                display: none
+            &__text.left-bars
+                margin-left: 40px
+
+.footer
+    background: $blackColor
+    .container
+        
+        color: $whiteColor
+        display: flex
+        justify-content: space-around
+        align-items: center
+        font-size: 13px
+        
+
