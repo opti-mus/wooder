@@ -56,9 +56,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #ffffff;
 }
 
@@ -438,8 +438,8 @@ li {
   content: '';
   display: block;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 30%;
+  height: 20%;
   border-radius: 50%;
   background: #BEA67C;
   left: 50%;
@@ -482,6 +482,11 @@ li {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.wooder-video__wrapper img {
+  width: 100%;
+  height: auto;
 }
 
 .black-woods {

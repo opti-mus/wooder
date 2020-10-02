@@ -46,7 +46,7 @@
     font-size: 11px;
   }
   .decor {
-    margin-top: 120px;
+    margin-top: 80px !important;
   }
   .wooder-video h1 {
     font-size: 40px;
@@ -94,13 +94,28 @@
   }
   .wooder-video p {
     font-size: 8px;
+    margin-top: 20px !important;
   }
-  .wooder-video__wrapper div img {
-    width: 80%;
+  .wooder-video p::after {
+    top: -10px !important;
+  }
+  .wooder-video__wrapper {
+    margin-top: 10px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .wooder-video__wrapper div {
+    margin-left: 10px;
+  }
+  .wooder-video__wrapper div::before {
+    border-width: 5px 0 5px 10px !important;
   }
 }
 
 @media screen and (max-width: 470px) {
+  .btn {
+    font-size: 8px;
+  }
   .black-woods__main.left-bars {
     margin-left: 0;
   }
@@ -156,5 +171,9 @@
   }
   .about .left-bars {
     margin-left: 0 !important;
+  }
+  .footer .container {
+    font-size: 9px;
+    padding: 10px 0;
   }
 }
