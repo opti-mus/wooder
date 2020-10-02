@@ -100,7 +100,7 @@
     top: -10px !important;
   }
   .wooder-video__wrapper {
-    margin-top: 10px;
+    margin-top: 20px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -115,6 +115,10 @@
 @media screen and (max-width: 470px) {
   .btn {
     font-size: 8px;
+  }
+  .black-woods {
+    margin-top: 45px;
+    margin-bottom: 65px;
   }
   .black-woods__main.left-bars {
     margin-left: 0;
